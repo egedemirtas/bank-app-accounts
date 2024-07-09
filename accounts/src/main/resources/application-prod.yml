@@ -1,0 +1,9 @@
+# provided for a demo of how to use SPRING PROFILES
+accounts:
+  message: "Welcome to bank API PROD"
+  contactDetails:
+    name: "Rare Wind PROD"
+    email: "rarewind@rarewind.com PROD"
+  onCallSupport:
+    - 222
+    - 222
