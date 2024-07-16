@@ -1,9 +1,0 @@
-# provided for a demo of how to use SPRING PROFILES
-accounts:
-  message: "Welcome to bank API QA"
-  contactDetails:
-    name: "Rare Wind QA"
-    email: "rarewind@rarewind.com QA"
-  onCallSupport:
-    - 111
-    - 111
