@@ -6,3 +6,14 @@ spring:
   config:
     # "configserver" is used no matter what your config server name is or its repo name
     import: "optional:configserver:http://localhost:8071" #"optional" used if configs are not mandatory
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # this enables and exposes all the endpoints supported by actuator,
+        # include: "refresh"  # you can also specify only the refresh endpoint
