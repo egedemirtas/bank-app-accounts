@@ -2,7 +2,7 @@ spring:
   application:
     name: "accounts" # tell ms to look for config files starting with "accounts"
   profiles:
-    active: prod
+    active: default
   config:
     # "configserver" is used no matter what your config server name is or its repo name
     import: "optional:configserver:http://localhost:8071" #"optional" used if configs are not mandatory
