@@ -41,9 +41,16 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+        <!--
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
         <dependency>
@@ -118,7 +125,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>rarewind/bank-${project.artifactId}:v2</name>
+                        <name>rarewind/bank-${project.artifactId}:v4</name>
                     </image>
                 </configuration>
             </plugin>
@@ -128,7 +135,7 @@
                 <version>3.4.2</version>
                 <configuration>
                     <to>
-                        <image>rarewind/bank-${project.artifactId}:v3</image>
+                        <image>rarewind/bank-${project.artifactId}:v4</image>
                     </to>
                 </configuration>
             </plugin>
